@@ -8,6 +8,7 @@ package com.model;
 */
 
 public class Address {
+	
 	private int id;
 	private String state;
 	private String city;
@@ -16,8 +17,9 @@ public class Address {
 		
 	}
 
-	public Address(String state, String city) {
+	public Address(int id, String state, String city) {
 		super();
+		this.id = id;
 		this.state = state;
 		this.city = city;
 	}
@@ -83,5 +85,6 @@ public class Address {
 	@Override
 	public String toString() {
 		return "Address [id=" + id + ", state=" + state + ", city=" + city + "]";
-	}	
+	}
+	
 }

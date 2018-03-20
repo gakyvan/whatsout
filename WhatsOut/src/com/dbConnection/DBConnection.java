@@ -21,7 +21,7 @@ public class DBConnection {
 	 *  */
 	private static final String user = "root";
 	private static final String password = "rupenman";
-	private static final String mySQLURL = "jdbc:mysql://127.0.0.1:3306/WhatsOut";
+	private static final String mySQLURL = "jdbc:mysql://127.0.0.1:3306/WhatsOutdb";
 
 	private Connection con;
 

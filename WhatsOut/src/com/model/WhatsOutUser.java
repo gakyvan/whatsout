@@ -8,7 +8,7 @@ import java.util.List;
 *
 * @author Rupendra MAHARJAN
 * Created On: March 19, 2018
-* Description: User Information
+* Description: WhatsOutUser Information
 */
 
 public class WhatsOutUser {
@@ -37,8 +37,23 @@ public class WhatsOutUser {
 		address = new Address();
 	}
 
-	public WhatsOutUser(String userName, String password, String firstName, String lastName, String middleName, String email,
+	public WhatsOutUser(int id, String userName, String password, String firstName, String lastName, String middleName, String email,
 			String phone, String profilePicture, LocalDate joinDate, Address address) {
+		super();
+		this.id = id;
+		this.userName = userName;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.middleName = middleName;
+		this.email = email;
+		this.phone = phone;
+		this.profilePicture = profilePicture;
+		this.joinDate = joinDate;
+		this.address = address;
+	}
+
+	public WhatsOutUser(String userName, String password, String firstName, String lastName, String middleName,
+			String email, String phone, String profilePicture, LocalDate joinDate, Address address) {
 		super();
 		this.userName = userName;
 		this.password = password;
@@ -67,11 +82,11 @@ public class WhatsOutUser {
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
-	
+
 	public String getPassword() {
-		return this.password;
+		return password;
 	}
-	
+
 	public void setPassword(String password) {
 		this.password = password;
 	}

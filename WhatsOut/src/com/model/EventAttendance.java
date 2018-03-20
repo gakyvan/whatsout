@@ -6,7 +6,7 @@ import java.time.LocalDate;
 *
 * @author Rupendra MAHARJAN
 * Created On: March 19, 2018
-* Description: Event Attended By User
+* Description: Event Attended By WhatsOutUser
 */
 public class EventAttendance {
 	private int id;
