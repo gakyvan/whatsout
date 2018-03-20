@@ -172,4 +172,59 @@ body{
     margin-bottom: 30px;
 }
 
+/*uuser-profile*/
+.user-profile{
+    padding: 3%;
+}
+
+/*Hide actual file input field*/
+#profile-picture{
+    display:none;
+}
+
+/*adjust profile picture*/
+.upload-profile-picture{
+    float: left;
+    cursor: pointer; 
+    height:150px;
+    width:auto;
+}
+
+/*Hide actual file input field*/
+#event-picture{
+    display:none;
+}
+
+/*adjust event picture*/
+.upload-event-picture{
+    float: left;
+    cursor: pointer; 
+    height:150px;
+    width:auto;
+}
+
+/*adjust heading for prolile page*/
+.profile-heading{
+    font-weight: bold;
+    padding: 3% 0;
+    font-size: 24pt;
+    float: left;
+}
+
+/*adjust picture label*/
+.profile-picture-label{
+    vertical-align: middle;
+    line-height: 150px;
+}
+
+.form-check{
+    text-align: left;
+}
+
+.save-profile{
+    float: left;
+    margin-top: 20px;
+}
+
+
 
