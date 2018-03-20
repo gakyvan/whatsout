@@ -10,7 +10,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>What's Out</title>
+    <title>Profile - What's Out</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -30,8 +30,11 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <!-- main.js -->
-    <script src="js/wo.js"></script>
+    <!-- Jquery validation plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+
+    <!-- Custom profile js -->
+    <script src="js/profile.js"></script>
 </head>
 
 <body>
@@ -131,7 +134,12 @@
                         <div class="form-group row">
                             <label for="address" class="col-sm-3 col-form-label">Address</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" id="address" placeholder="Address">
+                                <select class="custom-select form-control" id="address">
+                                        <option selected>Choose...</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
                             </div>
                         </div>
 
@@ -163,13 +171,14 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                                <label class="col-sm-3"></label>
+                            <label class="col-sm-3"></label>
                             <div class="offset-sm-3 col-sm-9">
                                 <button type="submit" class="btn btn-success save-profile">Save changes</button>
                             </div>
                         </div>
                     </form>
-                </div><!-- User profile div -->
+                </div>
+                <!-- User profile div -->
 
                 <!-- event post -->
             </div>
