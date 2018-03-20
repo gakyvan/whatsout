@@ -37,7 +37,7 @@ public class WhatsOutUser {
 		address = new Address();
 	}
 
-	public WhatsOutUser(int id, String userName, String firstName, String lastName, String middleName, String email,
+	public WhatsOutUser(int id, String userName, String password, String firstName, String lastName, String middleName, String email,
 			String phone, String profilePicture, LocalDate joinDate, Address address) {
 		super();
 		this.id = id;
