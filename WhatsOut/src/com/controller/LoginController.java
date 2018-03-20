@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.swing.plaf.synth.SynthSeparatorUI;
 
 /**
  *
@@ -16,15 +17,20 @@ import javax.servlet.http.HttpServletResponse;
  * Description: Loads the first page of the screen
  */
 
-@WebServlet("/homepage")
-public class HomePage extends HttpServlet {
+@WebServlet("/Login")
+public class LoginController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    public HomePage() {
+    public LoginController() {
         super();
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		this.getServletContext().getRequestDispatcher("/WEB-INF/login.jsp").forward(request, response);
+		this.getServletContext().getRequestDispatcher("/views/login/login.jsp").forward(request, response);
+	}
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+		String username= request.getParameter("username");
+		System.out.println(username);
 	}
 }

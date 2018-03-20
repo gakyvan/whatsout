@@ -16,9 +16,8 @@ public class Address {
 		
 	}
 
-	public Address(int id, String state, String city) {
+	public Address(String state, String city) {
 		super();
-		this.id = id;
 		this.state = state;
 		this.city = city;
 	}
