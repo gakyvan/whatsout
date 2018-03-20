@@ -23,6 +23,9 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- main.js -->
+    <script src="js/wo.js"></script>
 </head>
 
 <body>
@@ -31,8 +34,9 @@
             <h3 class="banner-icon">Whats out</h3>
 
             <div class="dropdown user-profile-dropdown">
-                    <img src="images/user.jpg" class="user-profile-dropdown dropdown-toggle" id="user-profile-dropdown" data-toggle="dropdown"/>
-                
+                <img src="images/user.jpg" class="user-profile-dropdown dropdown-toggle" id="user-profile-dropdown" data-toggle="dropdown"
+                />
+
                 <ul class="dropdown-menu" aria-labelled-by="user-profile-dropdown">
                     <li>
                         <a>My Profile</a>
@@ -43,7 +47,7 @@
                     <li>
                         <a>Logout</a>
                     </li>
-                    
+
                 </ul>
             </div>
 
@@ -54,6 +58,7 @@
 
     <div class="container-fluid main-body">
         <div class="row">
+            <div class="col-md-1"></div>
             <div class="col-md-2 sidebar-left">
                 <div class="input-group">
                     <input class="form-control" placeholder="Search...">
@@ -82,15 +87,153 @@
                         <span class="events-menu-item"></span>Favourite</span>
                     </li>
                 </ul>
-            </div>
-            <!-- col -->
+            </div><!-- col -->
 
-            <div class="col-md-8 main-posts">
-                <img src="images/fun.jpg" />
-                <img src="images/fun.jpg" />
-                <img src="images/fun.jpg" />
-            </div>
-            <!-- col -->
+            <div class="col-md-6 main-posts">
+                <div class="event-post">
+                        <div class="panel panel-success panel-posts">
+                                <div class="panel-heading">
+                                    <h1 class="panel-title">Mum- Soccer tournament</h1>
+                                </div><!-- panel heading -->
+            
+                                <div class="panel-body">
+                                    <img src="images/fun.jpg" class="panel-body-image" />
+                                    <Strong>Location : </Strong> Recreation center <br>
+                                    <Strong>Organized by : </Strong> William chaparro <br>
+                                    <Strong>Date : </Strong> Jan 8, 2017 <br>
+                                    <Strong>Time : </Strong>3:30 pm
+                                    <p> Additional classes can be used to vary this layout on a per-form basis.</p>
+                                </div> <!-- panel-body -->
+            
+                                <div class="panel-footer">
+                                    <ul class="post-feedback">
+                                        <li>
+                                            <i class="glyphicon glyphicon-plus"></i>
+                                            <span class="post-feedback-item">Count me</span>
+                                        </li>
+                                        <li>
+                                            <i class="glyphicon glyphicon-comment"></i>
+                                            <span class="post-feedback-item" post-id="1">Say something</span>
+                                        </li>
+                                        <li>
+                                            <i class="glyphicon glyphicon-hand-up"></i>
+                                            <span class="post-feedback-item">20 attending</span>
+                                        </li>
+                                    </ul>
+                                </div> <!-- panel-footer -->
+                            </div><!-- panel -->
+
+                            <div class="panel panel-default post-comments" id="post-comment-1">
+                                <div class="panel-body">
+                                    <div class="post-old-comments">
+                                        <img src="images/user.jpg"  class="post-comments-image"/>
+                                        <div class="load-old-comments-comment">Here goes the comment. Awsomme!!!Here goes the comment. Awsomme!!!Here goes the comment. Awsomme!!!</div>
+                                    </div>
+
+                                    <div class="post-new-comment">
+                                        <img src="images/user.jpg"  class="post-comments-image"/>
+                                        <input type="text" class="form-control comment-textbox" placeholder="Write something..."/>
+                                    </div>
+                                </div>
+                            </div><!-- coments -->
+                </div> <!-- event post -->
+
+                <div class="event-post">
+                        <div class="panel panel-success panel-posts">
+                                <div class="panel-heading">
+                                    <h1 class="panel-title">Mum- Soccer tournament</h1>
+                                </div><!-- panel heading -->
+            
+                                <div class="panel-body">
+                                    <img src="images/fun.jpg" class="panel-body-image" />
+                                    <Strong>Location : </Strong> Recreation center <br>
+                                    <Strong>Organized by : </Strong> William chaparro <br>
+                                    <Strong>Date : </Strong> Jan 8, 2017 <br>
+                                    <Strong>Time : </Strong>3:30 pm
+                                    <p> Additional classes can be used to vary this layout on a per-form basis.</p>
+                                </div> <!-- panel-body -->
+            
+                                <div class="panel-footer">
+                                    <ul class="post-feedback">
+                                        <li>
+                                            <i class="glyphicon glyphicon-plus"></i>
+                                            <span class="post-feedback-item">Count me</span>
+                                        </li>
+                                        <li>
+                                            <i class="glyphicon glyphicon-comment"></i>
+                                            <span class="post-feedback-item" post-id="3">Say something</span>
+                                        </li>
+                                        <li>
+                                            <i class="glyphicon glyphicon-hand-up"></i>
+                                            <span class="post-feedback-item">20 attending</span>
+                                        </li>
+                                    </ul>
+                                </div> <!-- panel-footer -->
+                            </div><!-- panel -->
+
+                            <div class="panel panel-default post-comments" id="post-comment-3">
+                                <div class="panel-body">
+                                    <div class="post-old-comments">
+                                        <img src="images/user.jpg"  class="post-comments-image"/>
+                                        <div class="load-old-comments-comment">Here goes the comment. Awsomme!!!Here goes the comment. Awsomme!!!Here goes the comment. Awsomme!!!</div>
+                                    </div>
+
+                                    <div class="post-new-comment">
+                                        <img src="images/user.jpg"  class="post-comments-image"/>
+                                        <input type="text" class="form-control comment-textbox" placeholder="Write something..."/>
+                                    </div>
+                                </div>
+                            </div><!-- coments -->
+                </div> <!-- event post -->
+
+                <div class="event-post">
+                        <div class="panel panel-success panel-posts">
+                                <div class="panel-heading">
+                                    <h1 class="panel-title">Mum- Soccer tournament</h1>
+                                </div><!-- panel heading -->
+            
+                                <div class="panel-body">
+                                    <img src="images/fun.jpg" class="panel-body-image" />
+                                    <Strong>Location : </Strong> Recreation center <br>
+                                    <Strong>Organized by : </Strong> William chaparro <br>
+                                    <Strong>Date : </Strong> Jan 8, 2017 <br>
+                                    <Strong>Time : </Strong>3:30 pm
+                                    <p> Additional classes can be used to vary this layout on a per-form basis.</p>
+                                </div> <!-- panel-body -->
+            
+                                <div class="panel-footer">
+                                    <ul class="post-feedback">
+                                        <li>
+                                            <i class="glyphicon glyphicon-plus"></i>
+                                            <span class="post-feedback-item">Count me</span>
+                                        </li>
+                                        <li>
+                                            <i class="glyphicon glyphicon-comment"></i>
+                                            <span class="post-feedback-item" post-id="2">Say something</span>
+                                        </li>
+                                        <li>
+                                            <i class="glyphicon glyphicon-hand-up"></i>
+                                            <span class="post-feedback-item">20 attending</span>
+                                        </li>
+                                    </ul>
+                                </div> <!-- panel-footer -->
+                            </div><!-- panel -->
+
+                            <div class="panel panel-default post-comments" id="post-comment-2">
+                                <div class="panel-body">
+                                    <div class="post-old-comments">
+                                        <img src="images/user.jpg"  class="post-comments-image"/>
+                                        <div class="load-old-comments-comment">Here goes the comment. Awsomme!!!Here goes the comment. Awsomme!!!Here goes the comment. Awsomme!!!</div>
+                                    </div>
+
+                                    <div class="post-new-comment">
+                                        <img src="images/user.jpg"  class="post-comments-image"/>
+                                        <input type="text" class="form-control comment-textbox" placeholder="Write something..."/>
+                                    </div>
+                                </div>
+                            </div><!-- coments -->
+                </div> <!-- event post -->
+            </div><!-- col-md-6 main-posts -->
 
             <div class="col-md-2 sidebar-right">
                 <h3>My Interests</h3>
@@ -111,6 +254,7 @@
                 </ul>
             </div>
             <!-- col -->
+            <div class="col-md-1"></div>
         </div>
         <!-- row -->
     </div>
