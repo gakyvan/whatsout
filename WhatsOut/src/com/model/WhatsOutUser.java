@@ -8,7 +8,7 @@ import java.util.List;
 *
 * @author Rupendra MAHARJAN
 * Created On: March 19, 2018
-* Description: User Information
+* Description: WhatsOutUser Information
 */
 
 public class WhatsOutUser {
@@ -66,6 +66,14 @@ public class WhatsOutUser {
 
 	public void setUserName(String userName) {
 		this.userName = userName;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	public String getFirstName() {

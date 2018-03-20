@@ -8,6 +8,7 @@ package com.model;
 */
 
 public class Address {
+	
 	private int id;
 	private String state;
 	private String city;
@@ -85,7 +86,5 @@ public class Address {
 	public String toString() {
 		return "Address [id=" + id + ", state=" + state + ", city=" + city + "]";
 	}
-	
-	
 	
 }
