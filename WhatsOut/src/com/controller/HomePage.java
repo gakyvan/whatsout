@@ -12,8 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 /**
  *
  * @author Rupendra MAHARJAN
+ * Created Date: March 19, 2018
  * Description: Loads the first page of the screen
  */
+
 @WebServlet("/homepage")
 public class HomePage extends HttpServlet {
 	private static final long serialVersionUID = 1L;

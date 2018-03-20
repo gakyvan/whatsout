@@ -42,6 +42,7 @@ public class WhatsOutUser {
 		super();
 		this.id = id;
 		this.userName = userName;
+		this.password = password;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.middleName = middleName;
@@ -66,6 +67,14 @@ public class WhatsOutUser {
 
 	public void setUserName(String userName) {
 		this.userName = userName;
+	}
+	
+	public String getPassword() {
+		return this.password;
+	}
+	
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	public String getFirstName() {

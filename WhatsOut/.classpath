@@ -15,5 +15,6 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/home/rupendra/Downloads/jsp-api-2.1.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
