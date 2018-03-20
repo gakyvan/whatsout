@@ -27,11 +27,11 @@ public class DBConnectionTest {
 		 Testing retrieving data
 		 */
 		//Testing delete data from a table
-			query="DELETE FROM category WHERE category_id=?";
+			query="DELETE FROM Category WHERE category_id=?";
 			boolean result=qex.delete(query, 2);
 			System.out.println(result);
 		try {
-			query = "SELECT * FROM category";
+			query = "SELECT * FROM Category";
 			ResultSet rs = qex.getData(query);
 			while (rs.next()) {
 				System.out.println(rs.getInt("category_id") + " - " + rs.getString("name") + " - "
