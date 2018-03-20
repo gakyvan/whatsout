@@ -1,13 +1,14 @@
-$(document).ready(function(){
-    $('.post-feedback-item').click(function(){
-        let postId = $(this).attr('post-id');
-        console.log($('#post-comment-' + postId).css('display'));
-        if( $('#post-comment-' + postId).css('display') == 'none'){
-            $('#post-comment-' + postId).show(200);
-        }
+/*
+    Author : Prakash rai
+    Contact : prakashrainpl@gmail.com
+    Date : 2018/03/20
+    Description : Custom jquery functions for Whats out page
+*/
 
-        else{
-            $('#post-comment-' + postId).hide(200);
-        }
+$(document).ready(function(){
+    //Show hide when comment clicked in post
+    $('.post-feedback-comment').click(function(){
+        let postId = $(this).attr('post-id');
+        $('#post-comment-' + postId).toggle(200);
     });
 });
