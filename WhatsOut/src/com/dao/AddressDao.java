@@ -53,6 +53,7 @@ public class AddressDao {
 		return a;
 	}
 	
+	
 	/*
 	 * Written on March 20, 2018 
 	 * This function retrieves one address based on the state and city
@@ -74,6 +75,29 @@ public class AddressDao {
 		}
 		qex.closeConnection();
 		return a;
+	}
+	
+	/*
+	 * Written on March 20, 2018 
+	 * This function retrieves all the address in the database
+	 * Uses the model written by Rupendre Maharjan
+	 * Uses the QueryExecutor Class written by Yvan GAKUBA
+	 * @Author Yvan GAKUBA
+	 * */
+	public List<Address> findAll() {
+		QueryExecutor qex = new QueryExecutor();
+		String query = "SELECT * FROM address";
+		List<Address> list = new ArrayList<>();
+		try {
+			ResultSet rs = qex.getData(query);
+			while (rs.next()) {
+				list.add(new Address(rs.getInt("id"), rs.getString("state"), rs.getString("city")));
+			}
+		} catch (SQLException sq) {
+			System.out.println(sq);
+		}
+		qex.closeConnection();
+		return list;
 	}
 	
 	/*
