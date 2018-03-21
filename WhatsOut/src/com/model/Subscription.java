@@ -1,8 +1,7 @@
 package com.model;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
+
 
 /**
 *
@@ -12,51 +11,45 @@ import java.util.List;
 */
 
 public class Subscription {
+	
 	private int id;
 	private LocalDate subscriptionDate;
-	private List<EventCategory> eventCategoryList = new ArrayList<>();
+	private WhatsOutUser subscriber;
+	private EventCategory category;
 	
-	public Subscription() {
-		
-	}
-
-	public Subscription(int id, LocalDate subscriptionDate) {
+	public Subscription() {}
+	
+	public Subscription(int id, LocalDate subscriptionDate, WhatsOutUser subscriber, EventCategory category) {
 		super();
 		this.id = id;
 		this.subscriptionDate = subscriptionDate;
+		this.subscriber = subscriber;
+		this.category = category;
 	}
-
+	
 	public int getId() {
 		return id;
 	}
-
 	public void setId(int id) {
 		this.id = id;
 	}
-
 	public LocalDate getSubscriptionDate() {
 		return subscriptionDate;
 	}
-
 	public void setSubscriptionDate(LocalDate subscriptionDate) {
 		this.subscriptionDate = subscriptionDate;
 	}
-	
-	public void addEventCategory(EventCategory evntCategory) {
-		eventCategoryList.add(evntCategory);
+	public WhatsOutUser getSubscriber() {
+		return subscriber;
 	}
-	
-	public List<EventCategory> getEventCategoryList(){
-		return eventCategoryList;
+	public void setSubscriber(WhatsOutUser subscriber) {
+		this.subscriber = subscriber;
 	}
-
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + id;
-		result = prime * result + ((subscriptionDate == null) ? 0 : subscriptionDate.hashCode());
-		return result;
+	public EventCategory getCategory() {
+		return category;
+	}
+	public void setCategory(EventCategory category) {
+		this.category = category;
 	}
 
 	@Override
@@ -68,7 +61,17 @@ public class Subscription {
 		if (getClass() != obj.getClass())
 			return false;
 		Subscription other = (Subscription) obj;
+		if (category == null) {
+			if (other.category != null)
+				return false;
+		} else if (!category.equals(other.category))
+			return false;
 		if (id != other.id)
+			return false;
+		if (subscriber == null) {
+			if (other.subscriber != null)
+				return false;
+		} else if (!subscriber.equals(other.subscriber))
 			return false;
 		if (subscriptionDate == null) {
 			if (other.subscriptionDate != null)
@@ -77,13 +80,11 @@ public class Subscription {
 			return false;
 		return true;
 	}
-
 	@Override
 	public String toString() {
-		return "Subscription [id=" + id + ", subscriptionDate=" + subscriptionDate + ", eventCategoryList="
-				+ eventCategoryList + "]";
+		return "Subscription [id=" + id + ", subscriptionDate=" + subscriptionDate + ", subscriber=" + subscriber
+				+ ", category=" + category + "]";
 	}
-	
 	
 	
 }

@@ -23,18 +23,14 @@ public class WhatsOutUser {
 	private String profilePicture;
 	private LocalDate joinDate;
 	private Address address;
-	
-	//List of events the user has attended
-	private List<EventAttendance> eventAttendanceList = new ArrayList<>();
-	
-	//List of events created by the user
-	private List<Event> createdEventList = new ArrayList<>();
-	
-	//List of events that the user subscribed
-	private List<Subscription> subscriptionList = new ArrayList<>();
+	private List<EventAttendance> eventAttendanceList;
+	private List<Event> createdEventList;
+	private List<Subscription> subscriptionList;
 
 	public WhatsOutUser() {
-		address = new Address();
+		this.eventAttendanceList = new ArrayList<>();
+		this.createdEventList = new ArrayList<>();
+		this.subscriptionList = new ArrayList<>();
 	}
 
 	public WhatsOutUser(int id, String userName, String password, String firstName, String lastName, String middleName, String email,
@@ -50,6 +46,9 @@ public class WhatsOutUser {
 		this.profilePicture = profilePicture;
 		this.joinDate = joinDate;
 		this.address = address;
+		this.eventAttendanceList = new ArrayList<>();
+		this.createdEventList = new ArrayList<>();
+		this.subscriptionList = new ArrayList<>();
 	}
 
 	public int getId() {
@@ -151,6 +150,7 @@ public class WhatsOutUser {
 	public void addCreatedEvent(Event evnt) {
 		createdEventList.add(evnt);
 	}
+	
 	
 	public List<Event> getCreatedEventList(){
 		return createdEventList;
